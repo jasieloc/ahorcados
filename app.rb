@@ -1,8 +1,10 @@
 require 'sinatra'
+require './lib/ahorcado'
 
 get '/' do
-	@@palabra = ""
-	erb :index 
+	ahorcado = Ahorcado.new
+	@@palabra = ahorcado.mostrarPalabra "elefante"
+	erb :index	
 end
 
 post '/' do	

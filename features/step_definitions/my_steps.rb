@@ -1,5 +1,5 @@
-Given(/^I opened the app$/) do
-	visit '/'
+Given(/^abrir la aplicacion$/) do
+	visit '/' 
 end
 
 When(/^I try letter "(.*?)"$/) do |letra|
@@ -7,7 +7,6 @@ When(/^I try letter "(.*?)"$/) do |letra|
     click_button("btnEnviar")
 end
 
-
-Then(/^debo ver  "(.*?)"$/) do |text|
+Then(/^debo ver "(.*?)"$/) do |text|
   last_response.body.should =~ /#{text}/m
 end

@@ -4,6 +4,6 @@ Feature:
 	so that I can tell if the letter exists in the hidden word
 
 Scenario:
-	Given I opened the app
+	Given abrir la aplicacion
 	When I try letter "e"
-	Then debo ver  "e_e____e"
+	Then debo ver "e_e____e"
