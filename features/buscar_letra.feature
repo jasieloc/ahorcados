@@ -6,4 +6,8 @@ Feature:
 Scenario:
 	Given abrir la aplicacion
 	When I try letter "e"
-	Then debo ver "e_e____e"
+	Then debo ver "e _ e _ _ _ _ e"
+Scenario:
+	Given abrir la aplicacion
+	When I try letter "l"
+	Then debo ver "_ l _ _ _ _ _ _"

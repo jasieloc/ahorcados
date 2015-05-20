@@ -9,8 +9,13 @@ end
 
 post '/' do	
    letra = params["letra"]
-   palabraOculta = "e_e____e"  
-   palabraOculta.count(letra).to_s  
-   @@palabra =  "e_e____e"
+   palabraOculta = " e l e f a n t e" 
+   if palabraOculta.count(letra) > 0 		
+   		for i in 0..15 do
+   			if palabraOculta[i] == letra
+   				@@palabra[i] = letra
+   			end
+   		end
+    end
 	erb :index 
 end
