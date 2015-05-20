@@ -1,0 +1,5 @@
+	<form action="/startMatch" method="post">
+			<input type="text" name="letra">
+			<input type="submit" id="btnEnviar" value="Enviar">
+	
+	</form>
